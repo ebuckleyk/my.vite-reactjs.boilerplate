@@ -1,0 +1,32 @@
+{
+  "root": true,
+  "env": { "browser": true, "es2020": true, "jest/globals": true },
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:tailwindcss/recommended",
+    "prettier"
+  ],
+  "ignorePatterns": ["dist", ".eslintrc.cjs"],
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "react-refresh",
+    "@typescript-eslint",
+    "prettier",
+    "jest"
+  ],
+  "rules": {
+    "react-refresh/only-export-components": [
+      "warn",
+      { "allowConstantExport": true },
+    ],
+    "no-console": 1,
+    "prettier/prettier": 2
+  },
+  "overrides": [{
+    "files": ["*.ts", "*.tsx", "*.js"],
+    "parser": "@typescript-eslint/parser"
+  }]
+}
